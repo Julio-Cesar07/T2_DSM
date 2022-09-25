@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1058398770683",
+    "project_id": "t2-dsm-60310",
+    "storage_bucket": "t2-dsm-60310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058398770683:android:e63ce39283b9be2eb6e75e",
+        "android_client_info": {
+          "package_name": "com.example.t2_dsw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058398770683-apcc204eunke3o4ttau82a96u1tm664i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLh1CAkNaozoHozCNwag0HxP7GQR6ZCGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058398770683-apcc204eunke3o4ttau82a96u1tm664i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

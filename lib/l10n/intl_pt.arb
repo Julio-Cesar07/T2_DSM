@@ -1,0 +1,27 @@
+{
+    "@_LOGIN_SCREEN": {},
+    "email": "E-mail",
+    "pass": "Senha",
+    "login": "Entre",
+    "rememberPass": "Esqueceu sua senha?",
+    "text_signup": "Não possui uma conta?",
+    "link_signup": "Se registre agora!",
+
+    "@_REMEMBER_PASS_SCREEN": {},
+    "redefinePass": "Redefinir Senha",
+
+    "@_CREATE_ACCOUNT_SCREEN": {},
+    "name": "Nome",
+    "register": "Aceitar e Cadastrar",
+
+    "@_HAMBURGUER_MENU": {},
+    "profile": "Editar Perfil",
+    "myPosts": "Minhas Postagens",
+    "notifications": "Notificações",
+    "logout": "Sair",
+    "enter": "Entrar",
+
+    "@_POST_SCREEN": {},
+    "writePost": "Escreva sua publicação",
+    "post": "Postar!"
+}
