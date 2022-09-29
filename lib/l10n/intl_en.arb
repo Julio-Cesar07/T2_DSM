@@ -23,5 +23,7 @@
 
     "@_POST_SCREEN": {},
     "writePost": "Write publication",
+    "writeRank" : "Inform the rank",
+    "writeVagancies" : "How many avaliables vagancies?",
     "post": "Post It!"
 }
