@@ -12,7 +12,7 @@ class CreatePost extends StatefulWidget {
 
 class _CreatePostState extends State<CreatePost> {
   CollectionReference postCollection = Firestore.instance.collection('post');
-
+  
   DateTime data = DateTime.now();
 
   final TextEditingController controllerPost = TextEditingController();
@@ -55,8 +55,8 @@ class _CreatePostState extends State<CreatePost> {
                 Spacer(),
                 ElevatedButton(
                   child: Text(S.current.post),
-                  onPressed: () {
-                    postCollection.add({
+                  onPressed: () async {
+                    await postCollection.add({
                       'text': controllerPost.text,
                       'rank': controllerRank.text,
                       'vagancies': controllerVagancies.text,
