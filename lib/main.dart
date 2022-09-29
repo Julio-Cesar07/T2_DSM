@@ -3,6 +3,7 @@
 import 'package:firedart/firedart.dart';
 import 'package:flutter/material.dart';
 import 'package:t2_dsw/pages/createaccount.page.dart';
+import 'package:t2_dsw/pages/createpost.page.dart';
 import 'package:t2_dsw/pages/home.service.dart';
 import 'package:t2_dsw/pages/login.page.dart';
 import 'package:t2_dsw/pages/rememberpass.page.dart';
@@ -49,6 +50,7 @@ class _MyApp extends State<MyApp> {
         '/home': (context) => HomeService(),
         '/rememberPass': (context) => RememberPassPage(),
         '/createAccount': (context) => CreateAccountPage(),
+        '/createPost' : (context) => CreatePost(),
       },
     );
   }

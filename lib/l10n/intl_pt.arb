@@ -23,5 +23,7 @@
 
     "@_POST_SCREEN": {},
     "writePost": "Escreva sua publicação",
+    "writeRank" : "Informe o Rank",
+    "writeVagancies" : "Quantas vagas disponiveis?",
     "post": "Postar!"
 }
