@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:t2_dsw/const/colors.dart';
 import 'package:t2_dsw/generated/l10n.dart';
+import 'package:t2_dsw/pages/login.page.dart';
+import 'main.dart';
 
 class HamburguerMenu extends StatelessWidget {
   const HamburguerMenu({super.key});
@@ -51,7 +53,9 @@ class HamburguerMenu extends StatelessWidget {
                 ),
                 title:
                     Text(S.current.logout, style: TextStyle(color: grayColor)),
-                onTap: () => {Navigator.of(context).pop()}),
+                onTap: () {
+                  Navigator.pushNamed(context, '/');
+                  }),
           ),
           Padding(padding: const EdgeInsets.all(16.0)),
         ]));
