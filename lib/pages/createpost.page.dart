@@ -13,9 +13,7 @@ class _CreatePostState extends State<CreatePost> {
   final TextEditingController controllerPost = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Create Post',
-        home: Scaffold(
+    return Scaffold(
             backgroundColor: darkBlueColor,
             body: Column(
               children: <Widget>[
@@ -38,6 +36,6 @@ class _CreatePostState extends State<CreatePost> {
                 ),
                 Padding(padding: const EdgeInsets.all(24.0)),
               ],
-            )));
+            ));
   }
 }

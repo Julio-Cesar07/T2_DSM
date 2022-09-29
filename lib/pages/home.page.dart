@@ -15,15 +15,12 @@ class _HomeState extends State<Home> {
   // #docregion build
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'GM',
-      home: Scaffold(
+    return Scaffold(
         backgroundColor: blackColor,
         body: const Center(
           child: Posts(),
         ),
-      ),
-    );
+      );
   }
   // #enddocregion build
 }
