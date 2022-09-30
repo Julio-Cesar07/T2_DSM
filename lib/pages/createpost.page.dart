@@ -41,7 +41,7 @@ class _CreatePostState extends State<CreatePost> {
                       color: whiteColor,
                     ),
                     decoration: InputDecoration(
-                        hintText: S.current.writePost,
+                        hintText: 'Rank',
                         hintStyle: TextStyle(color: whiteColor))),
                 Padding(padding: const EdgeInsets.all(16.0)),
                 TextFormField(
@@ -50,7 +50,7 @@ class _CreatePostState extends State<CreatePost> {
                       color: whiteColor,
                     ),
                     decoration: InputDecoration(
-                        hintText: S.current.writePost,
+                        hintText: 'Vagas',
                         hintStyle: TextStyle(color: whiteColor))),
                 Spacer(),
                 ElevatedButton(
