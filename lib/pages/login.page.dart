@@ -6,6 +6,7 @@ import 'package:t2_dsw/generated/l10n.dart';
 
 import 'package:t2_dsw/const/colors.dart';
 import 'package:t2_dsw/utils/utils.dart' as utils;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -17,6 +18,38 @@ class LoginPage extends StatefulWidget {
 class LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController();
   final _passController = TextEditingController();
+  var _language = 'pt_BR';
+
+  @override
+  void initState() {
+    super.initState();
+    _loadLanguage();
+  }
+
+  Future<void> _loadLanguage() async{
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _language = (prefs.getString('language') ?? 'pt_BR');
+      S.load(Locale(_language));
+      print('load: $_language');
+    });
+  }
+  
+  Future<void> changeLanguage() async{
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      var locale = Intl.getCurrentLocale();
+      print('locale: $locale');
+      if (locale == "pt_BR") {
+        S.load(Locale('en', 'US'));
+      } else {
+        S.load(Locale('pt', 'BR'));
+      }
+      locale = (locale == "pt_BR" ? "en_US": "pt_BR");
+      prefs.setString('language', locale);
+      print('change: ${prefs.getString('language')}');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -113,14 +146,7 @@ class LoginPageState extends State<LoginPage> {
       floatingActionButton: FloatingActionButton.small(
         child: Icon(Icons.language),
         onPressed: () {
-          setState(() {
-            var locale = Intl.getCurrentLocale();
-            if (locale == "pt_BR") {
-              S.load(Locale('en', 'US'));
-            } else {
-              S.load(Locale('pt', 'BR'));
-            }
-          });
+          changeLanguage();
         },
       ),
     );
