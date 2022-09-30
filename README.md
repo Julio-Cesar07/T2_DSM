@@ -20,3 +20,4 @@ samples, guidance on mobile development, and a full API reference.
 
 - a branch master possui o firebase instalado, então é necessário ter o firebase instalado na máquina
 - na branch master, no arquivo lib/main.dart tem uma constante com o id do projeto criado no firebase, criado para o funcionamento do firestore
+- a branch app_sem_firebase é uma versão do app sem a conexão da rede
